@@ -1,0 +1,35 @@
+{
+    "name": "viraj/cakephp-testdummy",
+    "description": "Factories for CakePHP tests",
+    "keywords": [
+        "testing",
+        "cakephp",
+        "testdummy",
+        "stubs"
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "cakephp/chronos": "^1.0.0",
+        "fzaninotto/faker": "~1.4",
+        "symfony/finder": "^3.3",
+        "cakephp/cakephp": "~3.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7|^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TestDummy\\": "src"
+        }
+    },
+    "conflict": {
+        "phpunit/phpunit": "<5.7"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Viraj Khatavkar",
+            "email": "viraj.2438@gmail.com"
+        }
+    ]
+}
