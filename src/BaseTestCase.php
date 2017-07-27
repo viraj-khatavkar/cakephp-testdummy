@@ -15,7 +15,8 @@ abstract class BaseTestCase extends IntegrationTestCase
 
         //Load factories
         $this->factory = Definition::getInstance();
-        $this->factory->load(realpath(dirname(__DIR__) . '/../../../config/Factories'));
+        $this->factory->load(realpath(CONFIG. 'Factories'));
+
     }
 
 }
