@@ -20,7 +20,10 @@
     "autoload": {
         "psr-4": {
             "TestDummy\\": "src"
-        }
+        },
+        "files": [
+            "src/helpers.php"
+        ]
     },
     "conflict": {
         "phpunit/phpunit": "<5.7"

@@ -112,7 +112,7 @@ class Definition
      * @param  string $class
      * @param  string $name
      *
-     * @return \App\Test\Factory\Builder
+     * @return \TestDummy\Builder
      */
     public function of($class, $name = 'default')
     {
