@@ -18,12 +18,9 @@ trait DatabaseMigrations
 
             $db->execute('SET FOREIGN_KEY_CHECKS=0');
 
-            // Create a schema collection.
-            $collection = $db->schemaCollection();
-
-            // Get the table names
-            foreach ($collection->listTables() as $table) {
-                $db->execute('DROP TABLE ' . $table);
+            // Get the table names and drop them
+            foreach ($db->execute('SHOW FULL TABLES WHERE table_type = \'BASE TABLE\'') as $table) {
+                $db->execute('DROP TABLE ' . $table[0]);
             }
 
             $db->execute('SET FOREIGN_KEY_CHECKS=1');
