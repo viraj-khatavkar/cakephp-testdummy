@@ -51,6 +51,8 @@ In `TableFactory.php` you will have access to `$faker` variable which is an inst
 
 To use factories, your tests need to extend the `\TestDummy\BaseTestCase`. This class extends the `IntegrationTestCase` present in CakePHP core, so you get access to all the core features and assertions.
 
+> If you are using the [Integrated](https://github.com/viraj-khatavkar/cakephp-integrated) package, you don't need to extend the `BaseTestCase` Just extend the appropriate class in the [Integrated](https://github.com/viraj-khatavkar/cakephp-integrated) package, and factories will be loaded automatically
+
 Now, you can use your defined factories in the tests:
 
 ```php
