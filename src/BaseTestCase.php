@@ -26,7 +26,6 @@ abstract class BaseTestCase extends IntegrationTestCase
         $this->factory = Definition::getInstance();
         $this->factory->load($this->factoriesPath);
 
-
         if (array_key_exists('TestDummy\Traits\DatabaseMigrations', class_uses(static::class))) {
             $this->runDatabaseMigrations();
         }
