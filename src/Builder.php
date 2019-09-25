@@ -142,7 +142,7 @@ class Builder
             'accessibleFields' => ['*' => true],
         ]);
 
-        $model->save($entity);
+        $model->save($entity, ['tableFactory' => true]);
 
         return $entity;
     }
