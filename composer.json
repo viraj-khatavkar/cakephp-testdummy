@@ -12,7 +12,7 @@
         "cakephp/chronos": "^1.0.0",
         "fzaninotto/faker": "~1.4",
         "symfony/finder": "^3.3",
-        "cakephp/cakephp": "~3.3",
+        "cakephp/cakephp": "^3.6",
         "cakephp/migrations": "~1.0"
     },
     "require-dev": {

@@ -2,11 +2,13 @@
 
 namespace TestDummy;
 
+use Cake\TestSuite\IntegrationTestTrait;
+use Cake\TestSuite\TestCase;
 
-use Cake\TestSuite\IntegrationTestCase;
-
-abstract class BaseTestCase extends IntegrationTestCase
+abstract class BaseTestCase extends TestCase
 {
+    use IntegrationTestTrait;
+
     protected $factory;
 
     public $factoriesPath = CONFIG . 'Factories';
